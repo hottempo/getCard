@@ -11,14 +11,15 @@ namespace getCard
         public string CardFace { get; set; }
         public string CardValue { get; set; }
 
-        private static string[] CardFaces = { "Spar", "Hjerter", "Klør", "Ruder" };
+        private static string[] CardFaces = { "Spar", "Hjerter", "Klør", "Ruder", "Joker" };
 
         private static IDictionary<int, string> CardValues = new Dictionary<int, string>()
         {
             {0, "Es" },
             {10, "Knægt" },
             {11, "Dame" },
-            {12, "Konge" }
+            {12, "Konge" },
+            {13, "Joker" }
         };
 
         public static Card FetchCard(int cardFace, int cardValue)
